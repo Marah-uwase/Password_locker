@@ -1,6 +1,7 @@
 import unittest
-import pyperclip
 from user import User
+import pyperclip
+
 
 class TestUser(unittest.TestCase):
 
@@ -30,7 +31,7 @@ class TestUser(unittest.TestCase):
 
     def test_save_user(self):
         '''
-        test_save_user test case to test if the user object is saved into the user listed
+        test_save_user test case to test if the user object is saved into the user list
         
         '''
         self.new_user.save_user() #saving the new user
@@ -57,7 +58,7 @@ class TestUser(unittest.TestCase):
 
     def test_delete_user(self):
         '''
-        test_delete_user to test if we van remove a user from our user list
+        test_delete_user to test if we can remove a user from our user list
         '''
 
         self.new_user.save_user()
