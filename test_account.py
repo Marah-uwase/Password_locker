@@ -39,8 +39,8 @@ class TestAccount(unittest.TestCase):
         test_account = Account("Twitter", "Kevin_hartz", "jumanji")
         test_account.save_account()
 
-        found_account = Account.find_by_accountName("Medium")
-        self.assertEqual(found_account.account_name,"Medium")
+        found_account = Account.find_by_accountName("Twitter")
+        self.assertEqual(found_account.account_name,"Twitter")
 
 
 if __name__ == '__main__':
