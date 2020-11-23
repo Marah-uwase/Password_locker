@@ -16,7 +16,7 @@ def find_user(username):
     return User.find_by_username(username)
 
 def find_password(userpassword):
-    return User.find_user_by_userpassword(userpassword)
+    return User.find_by_userpassword(userpassword)
 
 def display_user():
     return User.display_userInfo()
