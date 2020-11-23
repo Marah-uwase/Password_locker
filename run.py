@@ -16,7 +16,7 @@ def find_user(username):
     return User.find_by_username(username)
 
 def find_password(userpassword):
-    return User.find_by_userpassword(userpassword)
+    return User.find_user_by_userpassword(userpassword)
 
 def display_user():
     return User.display_userInfo()
@@ -24,8 +24,8 @@ def display_user():
 #copy method goes here
 
 
-def create_account(accountname,accountusername,accountpassword):
-    new_account = Account(accountname,accountusername,accountpassword)
+def create_account(account_name,account_userName,account_password):
+    new_account = Account(account_name,account_userName,account_password)
     return new_account
 
 def save_account(user):
@@ -37,8 +37,8 @@ def delete_account(user):
 def display_account_credentials():
     return Account.display_accounts()
 
-def find_account_credentials(accountname):
-    return Account.find_by_accountName(accountname)
+def find_account_credentials(account_name):
+    return Account.find_by_accountName(account_name)
 
 
 
@@ -52,10 +52,10 @@ def main():
     print('\n')
 
     while True:
-        print("Use these short-codes for: su - SignUp  or  lg - Login")
+        print("Use these short-codes for: si - SignIn  or  lg - Login")
         user_choice = input().lower()
 
-        if user_choice == "su":
+        if user_choice == "si":
             print("Create an account")
             print("-"*10)
             print("Enter your First_Name:")

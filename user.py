@@ -35,7 +35,7 @@ def delete_user(self):
         User.user_list.remove(self)
 
 @classmethod
-def find_user_by_user_name(cls,username):
+def find_by_user_name(cls,username):
         '''
         Method that takes in a username and returns a user that matches that username.
         Args:
