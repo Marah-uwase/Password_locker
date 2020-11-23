@@ -13,7 +13,7 @@ def delete_user(user):
     user.delete_user()
 
 def find_user(username):
-    return User.find_user_by_username(username)
+    return User.find_by_username(username)
 
 def find_password(userpassword):
     return User.find_by_userpassword(userpassword)
