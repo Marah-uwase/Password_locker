@@ -71,7 +71,7 @@ def main():
             print("Enter your password")
             password = input()
 
-            save_user = new_user(firstname,lastname,username,password)) #create and save new user
+            save_user(create_user(firstname,lastname,username,password)) #create and save new user
             print('\n')
             print(f"New user {firstname} {lastname} has been created.You can now proceed to login with your credentials.")
             print('\n')
