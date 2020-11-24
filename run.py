@@ -95,7 +95,7 @@ def main():
 
                 if account_choice == "nw":
                     print("Enter Account Name:")
-                    accountname = nput()
+                    accountname = input()
 
                     print("Enter Account Username:")
                     accountusername = input()
