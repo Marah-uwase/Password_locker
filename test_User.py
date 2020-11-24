@@ -101,7 +101,7 @@ class TestUser(unittest.TestCase):
         test to check if we can be able to display users saved in user_list
         '''
 
-        self.assertEqual(User.display_userInfo(),User.user_list
+        self.assertEqual(User.display_userInfo(),User.user_list)
 
 
 
