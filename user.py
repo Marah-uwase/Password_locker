@@ -1,41 +1,37 @@
 class User:
-   """
-    Class that generates new instances of users
    
-   """  
-   user_list = [] # empty user list.
+    
+    user_list = [] # empty user list.
+   
+    def __init__(self,first_name, last_name, user_name, password):
 
-def __init__(self,first_name, last_name, user_name, password):
-
-    '''
+        '''
         __init__ method that helps us define properties for our objects.
         Args:
             first_name: New user first name.
             last_name : New user last name.
             user_name: New user username.
             password : New user password.
-    '''
-    self.first_name = first_name
-    self.last_name = last_name
-    self.user_name = user_name
-    self.password = password
-
-def save_user(self):
         '''
-        save_user method saves user objects into user_list
-        '''
+        self.first_name = first_name
+        self.last_name = last_name
+        self.user_name = user_name
+        self.password = password
 
+    def save_user(self):
+        
+               
         User.user_list.append(self)
 
-def delete_user(self):
+    def delete_user(self):
         '''
         delete_user method deletes user objects from the user_list
         '''
 
         User.user_list.remove(self)
 
-@classmethod
-def find_by_user_name(cls,username):
+    @classmethod
+    def find_by_username(cls,username):
         '''
         Method that takes in a username and returns a user that matches that username.
         Args:
@@ -48,15 +44,15 @@ def find_by_user_name(cls,username):
             if user.user_name == username:
                 return user   
 
-@classmethod
-def find_user_by_userpassword(cls,userpassword):
+    @classmethod
+    def find_by_userpassword(cls,userpassword):
         for password in cls.user_list:
             if password.password == userpassword:
                 return password
 
 
-@classmethod
-def display_userInfo(cls):
+    @classmethod
+    def display_userInfo(cls):
         '''
         test to check if we can be able to display users saved in user_list
         '''
