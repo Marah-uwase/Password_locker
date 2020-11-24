@@ -77,13 +77,7 @@ def main():
             print('\n')
 
 
-        elif user_choice == "lg":
-            print("Enter your Username:")
-            login_userName = input()
-
-            print("Enter your password:")
-            login_password = input()
-
+        
             if find_user(login_userName) and find_password(login_password):
                 print('\n')
                 print("Welcome! you're logged to your account,please choose any of the options below to continue:")
